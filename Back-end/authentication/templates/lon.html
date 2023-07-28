@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{% if user %}
+        <ul>
+            <li>{{user_name}}</li>
+            <li><a href="/logout">Log out</a></li>
+            <li><a href="/dashboard">My dashboard</a></li>
+        </ul>
+{% endif %}
+<h1>Hello {{user_name}}</h1>
+<h2>The League of Nations</h2>
+<p>It was the first worldwide intergovernmental organisation whose principal mission was to maintain world peace, founded in 1920.</p>
+<p>It's kinda like the spiritual predecessor to the United Nations.They sucked BTW, during the time of the LON Hitler came and started WW2</p>
+{% endblock content %}
+

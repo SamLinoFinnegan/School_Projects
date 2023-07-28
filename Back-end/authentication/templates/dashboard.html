@@ -1,0 +1,21 @@
+{% extends "base.html" %}{% with messages = get_flashed_messages()%}
+    {% if messages %}
+        {% for msg in messages %}
+        <P style="color: red;">{{msg}}</P>
+        {% endfor%}
+    {% endif %}
+{% endwith %}
+{% block content %}
+
+<h1>Congratulations {{usr}}</h1>
+<diV>
+    <img src={{image}} alt="Lamp" width="100" height="100">
+</diV>
+<ul>
+    <li><a href="/logout">Log out</a></li>
+    <li><a href="/lon">League of Nations</a></li>
+</ul>
+
+<!-- Your solution here. -->
+{% endblock content %}
+

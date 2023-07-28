@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+{% if user %}
+        <ul>
+            <li>{{user_name}}</li>
+            <li><a href="/logout">Log out</a></li>
+            <li><a href="/dashboard">My dashboard</a></li>
+        </ul>
+{% endif %}
+<h2>About</h2>
+<p>It's kinda empty here, too!</p>
+<p>But fortunately we don't have to recreate the HTML stuff in <code>head</code> every time to arrive at this level of emptiness.</p>
+{% endblock content %}
+
